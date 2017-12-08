@@ -1,1 +1,298 @@
 /* Universal Styles */
+html {
+  font-family: 'Roboto', sans-serif;
+  color: darkgrey;
+}
+
+/* Header */
+header {
+height: 64px;
+background-color: white;
+}
+
+.innerheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.logotext {
+  color: darkgrey;
+}
+
+.logotexttwo {
+  color: lightgrey;
+}
+
+.logo img {
+  margin-left: 24px;
+  height: 32px;
+}
+
+.header .menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .menu ul li {
+  padding-left: 16px;
+}
+
+.header .mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .menu, .logotext, .logotexttwo {
+    display: none;
+  }
+  .header .mobile-menu {
+    display: block;
+  }
+}
+
+.main-banner {
+  background-color: lightgrey;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.main-banner .img-container {
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+}
+
+.main-banner .img-container img {
+  width: 100%;
+}
+
+.main-banner .text-container {
+  width: 40%;
+  padding: 0px 16px 0px 0px;
+}
+
+.main-banner .text-container .chunk {
+  margin: 24px 16px;
+}
+
+.main-banner .text-container .learn {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.main-banner .text-container .lorem {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-banner .text-container .start {
+  background-color: darkgray;
+  color: white;
+  font-size: 20px;
+  padding: 8px 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-banner {
+    display: block;
+    padding: 0px;
+  }
+
+  .main-banner .img-container {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .main-container img {
+    width: 100%;
+  }
+
+  .main-banner .text-container {
+    width: auto;
+    margin: 0px;
+    padding: 32px 16px;
+  }
+
+  .main-banner .text-container .chunk {
+    margin: 0px;
+  }
+
+  .main-banner .text-container .learn {
+    margin-bottom: 32px;
+  }
+
+  .main-banner .text-container .lorem {
+    margin-bottom: 24px;
+  }
+
+  .main-banner .text-container .start {
+    margin-bottom: 32px;
+  }
+}
+
+/* Campus Info Section */
+
+.column-split {
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+
+.column-split .column-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+}
+
+.column-left .img-container img {
+  width: 100%;
+}
+
+.it {
+  margin-top: 32px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.cura {
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+.emanuel {
+  margin-top: 32px;
+  font-size: 18px;
+}
+
+.column-split .column-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  padding: 32px 0px;
+  border-left: 0.5px solid lightgrey;
+}
+
+.column-split .column-right .image {
+  width: 40%;
+  align-self: center;
+}
+
+.column-split .column-right .info {
+  width: 60%;
+}
+
+.column-split .column-right .image-mobile {
+  display: none;
+}
+
+.column-split .column-right .image img {
+  width: 100%;
+}
+
+.orientation {
+  display: flex;
+  padding: 0px 16px 16px 16px;
+  border-bottom: 0.5px solid lightgrey;
+  transition: background-color 0.3s linear 0s;
+}
+
+.campus, .lecture {
+  display: flex;
+  padding: 16px;
+  border-bottom: 0.5px solid lightgrey;
+  transition: background-color 0.2s linear 0.1s;
+}
+
+.orientation:hover, .campus:hover, .lecture:hover {
+  background-color: lightgrey;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  margin: auto;
+}
+
+.info .top, .info .middle, .info .bottom {
+  padding: 8px 0px;
+}
+
+.info .top {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px 0px;
+}
+
+.info .middle {
+  font-size: 14px;
+  padding: 8px 0px;
+}
+
+.info .bottom {
+  color: lightblue;
+  font-size: 14px;
+  padding: 8px 0px;
+}
+
+.campus {
+  display: flex;
+  padding: 16px;
+  border-bottom: 0.5px solid lightgrey;
+  transition: background-color 0.2s linear 0.1s;
+}
+
+/* Begin course options section */
+
+.startlearning {
+  background-color: lightgrey;
+  font-weight: bold;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 32px 0px;
+}
+
+.classes-container {
+  background-color: lightgrey;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.classes-top {
+  padding: 0px 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.classes-top .class {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  width: 33%;
+}
+
+.classes-bottom {
+  padding: 0px 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.classes-bottom .class {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  width: 33%;
+}

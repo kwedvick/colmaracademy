@@ -1,13 +1,16 @@
 /* Universal Styles */
 html {
   font-family: 'Roboto', sans-serif;
-  color: darkgrey;
+  color: #191C1E;
+  font-size: 14px;
 }
 
 /* Header */
-header {
+.header {
 height: 64px;
 background-color: white;
+font-family: 'Hind', sans-serif;
+font-size: 1.3rem;
 }
 
 .innerheader {
@@ -25,11 +28,11 @@ background-color: white;
 }
 
 .logotext {
-  color: darkgrey;
+  color: #393B3D;
 }
 
 .logotexttwo {
-  color: lightgrey;
+  color: #454C53;
 }
 
 .logo img {
@@ -254,6 +257,38 @@ background-color: white;
   transition: background-color 0.2s linear 0.1s;
 }
 
+@media only screen and (max-width: 600px) {
+  .column-split .column-left {
+    display: none;
+  }
+
+  .column-split .column-right {
+    width: 100%;
+  }
+
+  .orientation,
+  .campus,
+  .lecture {
+    flex-direction: column;
+  }
+
+  .column-split .column-right .image {
+    display: 100%;
+  }
+
+  .column-split .column-right .image {
+    display: none;
+  }
+
+  .column-split .column-right .image-mobile {
+    display: block;
+  }
+
+  .column-split .column-right .info {
+    width: 100%;
+    padding: 0px;
+  }
+}
 /* Begin course options section */
 
 .startlearning {
@@ -304,6 +339,29 @@ background-color: white;
 .class img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .classes-top,
+  .classes-bottom {
+    flex-direction: column;
+    padding: 8px 16px;
+    margin: 0;
+  }
+
+  .classes-top .class,
+  .classes-bottom .class {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .class img,
+  .class .course,
+  .class .detail {
+    display: none;
+  }
+
+
 }
 
 .name {
@@ -404,7 +462,23 @@ background-color: white;
   font-size: 18px;
 }
 
-footer {
+@media only screen and (max-width: 600px) {
+  .video-main .video-column {
+    width: 100%;
+    padding: 0 0 24px;
+  }
+
+  .reimagine,
+  .curab {
+    display: none;
+  }
+
+  .video-main .text-column {
+    display: none;
+  }
+}
+
+.footer {
   display: flex;
   background-color: white;
   color: darkgray;
@@ -417,6 +491,17 @@ footer {
   display: flex;
 }
 
+.contain-links-ul li {
+  margin-left: 8px;
+}
+
+
 ol, ul {
   list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-links {
+    display: none;
+  }
 }

@@ -1,7 +1,7 @@
 /* Universal Styles */
 html {
-  font-family: 'Roboto', sans-serif;
-  color: #191C1E;
+  font-family: 'Lato', sans-serif;
+  color: #5C575C;
   font-size: 14px;
 }
 
@@ -28,11 +28,11 @@ font-size: 1.3rem;
 }
 
 .logotext {
-  color: #393B3D;
+  color: #5C575C;
 }
 
 .logotexttwo {
-  color: #454C53;
+  color: lightgrey;
 }
 
 .logo img {
@@ -47,6 +47,7 @@ font-size: 1.3rem;
 
 .header .menu ul li {
   padding-left: 16px;
+  color: #5C575C;
 }
 
 .header .mobile-menu {
@@ -61,6 +62,8 @@ font-size: 1.3rem;
     display: block;
   }
 }
+
+/* Begin Learn Something section */
 
 .main-banner {
   background-color: lightgrey;
@@ -79,8 +82,9 @@ font-size: 1.3rem;
 }
 
 .main-banner .text-container {
-  width: 40%;
+  width: 35%;
   padding: 0px 16px 0px 0px;
+  color: #5C575C;
 }
 
 .main-banner .text-container .chunk {
@@ -88,21 +92,23 @@ font-size: 1.3rem;
 }
 
 .main-banner .text-container .learn {
-  font-size: 40px;
+  font-size: 2.2em;
   font-weight: bold;
+  margin-right: 150px;
 }
 
 .main-banner .text-container .lorem {
   font-size: 20px;
-  font-weight: bold;
+  margin-right: 150px;
 }
 
 .main-banner .text-container .start {
-  background-color: darkgray;
+  background-color: #5C575C;
   color: white;
-  font-size: 20px;
+  font-size: 1.1em;
   padding: 8px 0px;
   text-align: center;
+  margin-right: 150px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -132,14 +138,18 @@ font-size: 1.3rem;
 
   .main-banner .text-container .learn {
     margin-bottom: 32px;
+    margin-right: 100px;
   }
 
   .main-banner .text-container .lorem {
     margin-bottom: 24px;
+    margin-right: 100px;
   }
 
   .main-banner .text-container .start {
     margin-bottom: 32px;
+    margin-right: 100px;
+    background-color: darkgrey;
   }
 }
 
@@ -150,6 +160,8 @@ font-size: 1.3rem;
   display: flex;
   width: 100%;
 }
+
+/* Left side */
 
 .column-split .column-left {
   width: 60%;
@@ -175,8 +187,10 @@ font-size: 1.3rem;
 
 .emanuel {
   margin-top: 32px;
-  font-size: 18px;
+  font-size: 1em;
 }
+
+/* Right side */
 
 .column-split .column-right {
   display: flex;
@@ -245,7 +259,7 @@ font-size: 1.3rem;
 }
 
 .info .bottom {
-  color: lightblue;
+  color: #3EC3FD;
   font-size: 14px;
   padding: 8px 0px;
 }
@@ -292,7 +306,7 @@ font-size: 1.3rem;
 /* Begin course options section */
 
 .startlearning {
-  background-color: lightgrey;
+  background-color: #DDDDDE;
   font-weight: bold;
   font-size: 40px;
   width: 100%;
@@ -301,7 +315,7 @@ font-size: 1.3rem;
 }
 
 .classes-container {
-  background-color: lightgrey;
+  background-color: #DDDDDE;
   width: 100%;
   padding-bottom: 32px;
 }
@@ -313,12 +327,19 @@ font-size: 1.3rem;
   margin: 0px 72px;
 }
 
+.classes-top .class:hover, .classes-bottom .class:hover {
+  background-color: #3EC3FD;
+  color: white;
+}
+
 .classes-top .class {
   display: flex;
   flex-direction: column;
   margin: 16px;
   width: 33%;
   background-color: white;
+  transition: background-color 0.5s linear 0s;
+  transition: color 0.5s linear 0s;
 }
 
 .classes-bottom {
@@ -334,6 +355,8 @@ font-size: 1.3rem;
   margin: 16px;
   width: 33%;
   background-color: white;
+  transition: background-color 0.5s linear 0s;
+  transition: color 0.5s linear 0s;
 }
 
 .class img {
@@ -347,12 +370,14 @@ font-size: 1.3rem;
     flex-direction: column;
     padding: 8px 16px;
     margin: 0;
+    background-color: white;
   }
 
   .classes-top .class,
   .classes-bottom .class {
     width: 100%;
     margin: 16px 0;
+    background-color: lightgrey;
   }
 
   .class img,
@@ -361,7 +386,10 @@ font-size: 1.3rem;
     display: none;
   }
 
-
+  .startlearning {
+    background-color: white;
+    padding-bottom: 0px;
+  }
 }
 
 .name {
@@ -378,6 +406,8 @@ font-size: 1.3rem;
   padding: 8px 16px;
 }
 
+/* Begin thesis section */
+
 .thesis {
   background-color: white;
   font-size: 40px;
@@ -393,6 +423,8 @@ font-size: 1.3rem;
   width: 100%;
   border-bottom: 0.5px solid lightgrey;
 }
+
+/* Left side */
 
 .video-main .video-column {
   width: 60%;
@@ -415,6 +447,8 @@ font-size: 1.3rem;
   margin-top: 24px;
   font-size: 24px;
 }
+
+/* Right side */
 
 .video-main .text-column {
   display: flex;
@@ -441,6 +475,11 @@ font-size: 1.3rem;
 .texttop, .textbottom {
   display: flex;
   padding: 16px;
+  transition: background-color 0.2s linear 0.1s;
+}
+
+.texttop:hover, .textbottom:hover {
+  background-color: lightgrey;
 }
 
 .text-container {
@@ -477,6 +516,8 @@ font-size: 1.3rem;
     display: none;
   }
 }
+
+/* Begin footer */
 
 .footer {
   display: flex;

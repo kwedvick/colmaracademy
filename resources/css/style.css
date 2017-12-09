@@ -88,13 +88,13 @@ font-size: 1.3rem;
 }
 
 .main-banner .text-container .chunk {
-  margin: 24px 16px;
+  margin: 14px 16px;
 }
 
 .main-banner .text-container .learn {
-  font-size: 2.2em;
+  font-size: 3em;
   font-weight: bold;
-  margin-right: 150px;
+  margin-right: 100px;
 }
 
 .main-banner .text-container .lorem {
@@ -106,7 +106,7 @@ font-size: 1.3rem;
   background-color: #5C575C;
   color: white;
   font-size: 1.1em;
-  padding: 8px 0px;
+  padding: 16px 0px;
   text-align: center;
   margin-right: 150px;
 }
@@ -176,7 +176,7 @@ font-size: 1.3rem;
 
 .it {
   margin-top: 32px;
-  font-size: 40px;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -249,18 +249,18 @@ font-size: 1.3rem;
 
 .info .top {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.5em;
   padding: 8px 0px;
 }
 
 .info .middle {
-  font-size: 14px;
+  font-size: 1.1em;
   padding: 8px 0px;
 }
 
 .info .bottom {
   color: #3EC3FD;
-  font-size: 14px;
+  font-size: 1.1em;
   padding: 8px 0px;
 }
 
@@ -308,7 +308,7 @@ font-size: 1.3rem;
 .startlearning {
   background-color: #DDDDDE;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 3em;
   width: 100%;
   text-align: center;
   padding: 32px 0px;
@@ -339,7 +339,7 @@ font-size: 1.3rem;
   width: 33%;
   background-color: white;
   transition: background-color 0.5s linear 0s;
-  transition: color 0.5s linear 0s;
+  transition: color 0.2s linear 0s;
 }
 
 .classes-bottom {
@@ -356,7 +356,7 @@ font-size: 1.3rem;
   width: 33%;
   background-color: white;
   transition: background-color 0.5s linear 0s;
-  transition: color 0.5s linear 0s;
+  transition: color 0.2s linear 0s;
 }
 
 .class img {
@@ -393,27 +393,33 @@ font-size: 1.3rem;
 }
 
 .name {
-  padding: 16px 16px;
-  font-size: 25px;
-  min-height: 50px;
+  padding-top: 16px;
+  padding-left: 16px;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .course {
   padding: 8px 16px;
+  font-size: 1.1em
 }
 
 .detail {
   padding: 8px 16px;
+  margin-bottom: 16px;
+  font-size: 1.1em;
 }
 
 /* Begin thesis section */
 
 .thesis {
   background-color: white;
-  font-size: 40px;
+  font-size: 3em;
+  font-weight: bold;
   width: 100%;
   text-align: center;
-  padding: 32px 0px;
+  padding: 64px 0px;
   border-top: 2px solid lightgrey;
 }
 
@@ -440,12 +446,13 @@ font-size: 1.3rem;
 
 .reimagine {
   margin-top: 32px;
-  font-size: 40px;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
 .curab {
   margin-top: 24px;
-  font-size: 24px;
+  font-size: 1.3em;
 }
 
 /* Right side */
@@ -494,11 +501,13 @@ font-size: 1.3rem;
 }
 
 .text-container .text-top {
-  font-size: 25px;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .text-container .text-bot {
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -526,6 +535,7 @@ font-size: 1.3rem;
   justify-content: space-between;
   width: auto;
   padding: 16px 24px 32px 24px;
+  font-size: 1em;
 }
 
 .contain-links-ul {
